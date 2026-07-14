@@ -2,12 +2,32 @@ Utility Minecraft mod for faster building and world editing.
 
 # Installation
 
-Place the mod's .jar file into your minecraft installation's `mods/` directory. See releases at [releases/](https://github.com/LeonardBengtsson/spaetial/releases).
+Place the mod's .jar file into your minecraft installation's `mods/` directory. See releases at [releases/](https://github.com/leolbe/spaetial/releases).
 
 Dependencies (make sure Minecraft version is matching):
 - [Fabric Loader](https://fabricmc.net/)
 - [Fabric API](https://modrinth.com/mod/fabric-api/)
 - [Mod Menu](https://modrinth.com/mod/modmenu/) (optional)
+
+# Features
+
+## Fast copying/moving
+
+Copy and move regions and blocks with a few quick inputs:
+
+`Alt LMB`, `LMB` to select a region.
+
+`X` to activate 'Cut' mode and `Ctrl Scroll` to move the selection.
+
+`LMB` to confirm. `Z` to undo.
+
+## Quick set/replace
+
+Fill volumes of blocks with the currently held block, or randomly select from items in a bundle:
+
+`Y`, `LMB` to replace non-air blocks in a volume.
+
+`Ctrl Y`, `LMB` to replace all blocks in a volume.
 
 # Usage
 
@@ -42,6 +62,10 @@ The following hotkeys are common to multiple editing states:
 | Ctrl V       | Paste (surface)                  |
 | Alt V        | Paste (including air)            |
 | Ctrl Alt V   | Paste (surface, including air)   |
+
+### Quick set/replace
+
+Select a volume (see controls above). 'Quick set' replaces all blocks in the volume with the block in your main hand, while 'quick replace' replaces only non-air blocks. If your main hand is empty, all blocks are replaced with air. If your main hand holds a bundle, a random selection of blocks are selected from the bundle's contents.
 
 ## `Cuboid selection` state
 
